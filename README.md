@@ -11,11 +11,11 @@ API used: API used: [Recipe API](https://www.themealdb.com/api.php)
 
 ## Images
 <p align="center">
+  <img src="https://github.com/havishshetty/Foodilit/blob/main/screenshots/startingpage.jpg" width="256" hspace="4">
   <img src="https://github.com/havishshetty/Foodilit/blob/main/screenshots/Recipepage.jpg" width="256" hspace="4">
   <img src="https://github.com/havishshetty/Foodilit/blob/main/screenshots/homepage.jpg" width="256" hspace="4">
   <img src="https://github.com/havishshetty/Foodilit/blob/main/screenshots/homepageexpanded.jpg" width="256" hspace="4">
   <img src="https://github.com/havishshetty/Foodilit/blob/main/screenshots/recipepagedetail.jpg" width="256" hspace="4">
-  <img src="https://github.com/havishshetty/Foodilit/blob/main/screenshots/startingpage.jpg" width="256" hspace="4">
 </p>
 
 This software was built using the following:
