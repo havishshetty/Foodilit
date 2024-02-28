@@ -1,6 +1,6 @@
 # Single Ingredient Recipe App
 
-API used: API used: [Recipe API](https://www.themealdb.com/api.php)
+API used: [Recipe API](https://www.themealdb.com/api.php)
 
 ## Features
 
