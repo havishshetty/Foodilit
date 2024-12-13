@@ -5,6 +5,8 @@ import 'package:foodilit/recipecard.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:foodilit/recipe_detail.dart';
+import 'package:foodilit/services/auth_service.dart';
+import 'package:foodilit/login_page.dart';
 
 class Recipes extends StatefulWidget {
   const Recipes({Key? key}) : super(key: key);
@@ -14,6 +16,7 @@ class Recipes extends StatefulWidget {
 }
 
 class _RecipesState extends State<Recipes> {
+  final AuthService _auth = AuthService();
   TextEditingController _controller = TextEditingController();
   String storedText = " ";
   var fooditem = "Pizza";
@@ -166,6 +169,19 @@ class _RecipesState extends State<Recipes> {
                 fontSize: 25,
               ),
             ),
+            actions: [
+              IconButton(
+                icon: Icon(Icons.logout),
+                onPressed: () async {
+                  await _auth.signOut();
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginPage()),
+                    (route) => false,
+                  );
+                },
+              ),
+            ],
             toolbarHeight: 80,
             // automaticallyImplyLeading: false,
           ),
